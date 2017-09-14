@@ -46,9 +46,11 @@ WordPress Themes
 ## 配置示例
 
 > `侧栏：友情链接示例`
+
 > ![BigHub Link](https://tangjie.me/media/themes/bighub-link.png)
 
 > `摘要：文章摘要示例` | `原文链接：自定义栏目示例`
+
 > ![BigHub Meta](https://tangjie.me/media/themes/bighub-meta.png)
 
 ## 特别声明

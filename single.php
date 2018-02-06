@@ -24,7 +24,7 @@
                 <?php the_content(); ?>
             </div>
             <?php endwhile; ?>
-            <div class="go-home"><a class="btn btn-default" href="<?php bloginfo('siteurl'); ?>" role="button">去 BigHub 查看最新动态</a></div>
+            <div class="go-home"><a class="btn btn-default" href="<?php bloginfo('siteurl'); ?>" role="button">去首页查看最新动态</a></div>
         </div>
         <!--左右-->
         <div class="col-sm-4 hidden-xs">

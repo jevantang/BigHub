@@ -84,11 +84,11 @@ function specs_wp_revisions_to_keep( $post ) {
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 
 //替换Gravatar服务器
-function kratos_get_avatar( $avatar ) {
-    $avatar = preg_replace( "/http:\/\/(www|\d).gravatar.com/","https://cn.gravatar.com",$avatar );
+function replace_gravatar($avatar) {
+    $avatar = str_replace(array("//gravatar.com/", "//secure.gravatar.com/", "//www.gravatar.com/", "//0.gravatar.com/", "//1.gravatar.com/", "//2.gravatar.com/", "//cn.gravatar.com/"), "//sdn.geekzu.org/", $avatar);
     return $avatar;
 }
-add_filter( 'get_avatar', 'kratos_get_avatar' );
+add_filter( 'get_avatar', 'replace_gravatar' );
 
 //分页
 function pagination($query_string){
